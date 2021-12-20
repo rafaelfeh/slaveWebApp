@@ -1,0 +1,309 @@
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4 class="panel-title pull-right" style="display: inline-block; max-width: 20%">
+			<a class="excluirProduto" style="text-decoration: underline; cursor: pointer"><strong>Excluir</strong></a>
+		</h4>
+		<h4 class="panel-title" style="display: inline-block; max-width: 80%">
+			<a class="toggleCollapseNew" data-toggle="collapse" href="#collapseNew">Produto <span class="numeroProduto"></span> - <strong><span class="tituloProduto">(não preenchido)</span></strong></a>
+		</h4>
+	</div>
+	<div id="collapseNew" class="panel-collapse collapse collapse-new">
+		<div class="panel-body panel-body-new">
+			<div class="row camposImagem camposProduto" style="display:none" >
+				<div class="col-md-3">
+					<strong>Preview:</strong>
+				</div>
+				<div class="col-md-9 preview" style="margin-bottom: 15px;">
+					<img style="max-width: 100%; max-height: 100px; padding: 5px; background-color: #dbdced;" src="../../../imagens/no_foto.png" border="0">
+				</div>
+				<input type="hidden" class="campoAlterado" name="produtos[].alterado" value="0" />
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<strong>Comprador responsável:</strong>
+				</div>
+				<div class="col-md-9">		
+					<select class="form-control selectCompradores marcaAlterado" name="produtos[].usuario.ID" style="width: 400px"></select>				
+				</div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-md-3">
+					<strong>Departamento sugerido:</strong>
+				</div>
+				<div class="col-md-9">		
+					<select class="form-control selectDepartamentos marcaAlterado" name="produtos[].departamento.departamentoID" style="width: 400px"></select>				
+				</div>
+			</div>
+			<br />
+			<br/>
+			<div class="row">
+					<div class="col-md-3">
+						<strong>Dia R:</strong>
+					</div>
+					<div class="col-md-9">		
+						<input type="radio" class="diaRNao" name="produtos[].diaR" value="0" /> Não
+						<input type="radio" class="diaRSim" name="produtos[].diaR" value="1" /> Sim			
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<strong>Produtos:</strong>
+				</div>
+				<div class="col-md-9">
+					<input class="form-control categoriaIDNew" type="hidden" name="produtos[].tabloideCategoria.tabloideCategoriaID" value="" /> <select class="form01 selectProdutos new-select2 marcaAlterado"
+						name="produtos[].produtoIDs[]" multiple="multiple" style="width: 400px">
+					</select>
+				</div>
+			</div>
+			<br />
+			<div class="camposProduto" style="display: none">
+				<br />
+				<div class="row">
+					<div class="col-md-3 ">
+						<strong>Irmãos:</strong>
+					</div>
+					<div class="col-md-9 irmaos"></div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-md-3">
+						<strong>Cod Sap:</strong>
+					</div>
+					<div class="col-md-3 codigo">
+						<input class="form-control" type="hidden" id="idsFator" name="idsFator" value="" />
+					</div>
+					<div class="col-md-3">
+						<strong>Cod Pai:</strong>
+					</div>
+					<div class="col-md-3 codigoPai"></div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-md-3">
+						<strong>Departamento:</strong>
+					</div>
+					<div class="col-md-9 categoria"></div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-md-3">
+						<strong>Venda atacado:</strong>
+					</div>
+					<div class="col-md-3">
+						<input style="width: 75px" class="money vendaAtacado calcFilho calcSelo marcaAlterado" type="text" name="produtos[].vendaAtacado" value="">
+					</div>
+					<div class="col-md-3">
+						<strong>Unidade atacado:</strong>
+					</div>
+					<div class="col-md-3">
+						<select class="unidadeAtacado calcFilho marcaAlterado" name="produtos[].unidade.unidadeDeVendaID">
+							<option value="">-</option>
+						</select>
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-md-3">
+						<strong>Fator:</strong>
+					</div>
+					<div class="col-md-3">
+						<input style="width: 75px" disabled="disabled" class="fator calcFilho" type="text" name="produtos[].fator" value="">
+						<button type="button" class="btn btn-warning correcoesFator"><i class="fas fa-hand-holding-usd"></i> Corrigir fator</button>
+					</div>
+					<div class="col-md-3">
+						<strong>Venda Varejo:</strong>
+					</div>
+					<div class="col-md-3">
+						<input style="width: 75px" disabled="disabled" class="vendaVarejo" readonly="readonly" type="text" name="produtos[].vendaVarejo" value="">
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-md-3">
+						<strong>Promoção:</strong>
+					</div>
+					<div class="col-md-3 divPromocao">
+
+					</div>
+					
+						<div class="col-md-6 promocaoLevePague" style="display: none">
+							<b>Leve</b> 
+							<input type="text" class="campoLeve camposLevePague marcaAlterado" style="width: 50px" name="produtos[].leve" value="">
+							<b>Pague</b> 
+							<input type="text" class="campoPague camposLevePague marcaAlterado" style="width: 50px" name="produtos[].pague" value="">
+						</div>
+						<div class="col-md-6 promocaoDescontoUnidade" style="display: none">
+							<b>Desconto de </b> 
+							<input type="text" class="money campoDesconto camposDescontoUnidade marcaAlterado" style="width: 50px" name="produtos[].desconto" value="">
+							<b>% na</b> 
+							<input type="text" class="campoUnidadeDesconto camposDescontoUnidade marcaAlterado" style="width: 50px" name="produtos[].unidadeDesconto" value="">
+							<b> Unidade</b> 
+						</div>
+				</div>
+					<div class="row campos-promocao3 precoPromocao" style="display: none" >
+						<br/>
+						<div class="col-md-3 seloPreco">
+							<strong>Preço promoção:</strong>
+						</div>
+						<div class="col-md-9 seloPreco">
+							<input class="precoftv" type="hidden" id="precoftv" name="precoftv" value="0,00">
+							<input style="width: 75px" class="money campoPrecoPromocional precoselo marcaAlterado" type="text" name="produtos[].precoPromocional" value="">
+						</div>
+					</div>
+				<div class="row">
+					<div class="col-md-3">
+						<strong>Chamada:</strong>
+					</div>
+					<div class="col-md-3">
+						<select class="form01 selo marcaAlterado" name="produtos[].selo.tabloideSeloID" style="width: 300px">
+						</select>
+					</div>
+				</div>
+				<div class="row campos-promocao1" style="display:none" >
+					<br />
+					<div class="col-md-3 selo1">
+						<strong class="selo1desc">Descrição promoção 1:</strong>
+					</div>
+					<div class="col-md-3 selo1">
+						<input type="text" class="selo1campo calcSelo marcaAlterado" style="width: 250px" name="produtos[].unidadePromocional" value="">
+					</div>
+					<div class="col-md-3 selo2">
+						<strong class="selo2desc">Descrição promoção 2:</strong>
+					</div>
+					<div class="col-md-3 selo2">
+						<input type="text" class="selo2campo calcSelo marcaAlterado" style="width: 250px" name="produtos[].unidadePromocional2" value="">
+					</div>
+				</div>
+				<div class="row campos-promocao2" style="display:none" >
+					<br/>
+					<div class="col-md-3 selo3">
+						<strong class="selo3desc">Descrição promoção 3:</strong>
+					</div>
+					<div class="col-md-3 selo3">
+						<input type="text" class="selo3campo calcSelo marcaAlterado" style="width: 250px" name="produtos[].unidadePromocional3" value="">
+					</div>
+					<div class="col-md-3 selo4">
+						<strong class="selo4desc">Descrição promoção 4:</strong>
+					</div>
+					<div class="col-md-3 selo4">
+						<input type="text" class="selo4campo calcSelo marcaAlterado" style="width: 250px" name="produtos[].unidadePromocional4" value="">
+					</div>
+				</div>
+				<div class="row campos-promocao3" style="display:none" >
+					<br/>
+					<div class="col-md-3 seloPreco">
+						<strong class="precoselodesc">Preço promoção:</strong>
+					</div>
+					<div class="col-md-9 seloPreco">
+						<input style="width: 75px" class="money precoselo marcaAlterado" type="text" name="produtos[].precoPromocional"
+							value="">
+					</div>
+				</div>
+				<div class="row">
+					<br/>
+					<div class="col-md-3">
+						<strong>Texto Selo:</strong>
+					</div>
+					<div class="col-md-9">
+						<input class="marcaAlterado textoSelo" type="text" style="width: 100%" name="produtos[].textoSelo" value="">
+					</div>
+				</div>
+				<div class="row">
+					<br />
+					<div class="col-md-3">
+						<strong>Descrição tabloide gerada:</strong>
+					</div>
+					<div class="col-md-9">
+						<span class="descricaoGerada">${tabloide.categorias[count].produtos[loopSlot.index-1].descricaoFormatada}</span>
+					</div>
+				</div>
+				<div class="row">
+					<br/>
+					<div class="col-md-3">
+						<strong>Descrição manual (deixe em branco para utilizar a gerada):</strong>
+					</div>
+					<div class="col-md-9">
+						<input type="text" class="marcaAlterado descricaoManual" type="text" style="width: 100%" name="produtos[].descricaoManual" value="">
+					</div>
+				</div>
+				<br />
+				<div class="grupos">
+				</div>
+				<div class="subprodutos">
+					<fieldset class="well form-group">
+						<p style="font-size: 20px;" class="tituloSubproduto"></p>
+						<div class="row">
+							<div class="col-md-2">
+								<strong>PMZ:</strong>
+							</div>
+							<div class="col-md-2">
+								<input style="width: 75px" class="money pmz calc marcaAlterado" type="text" name="produtos[].pmz" value="">
+							</div>
+							<div class="col-md-2">
+								<strong>BONI:</strong>
+							</div>
+							<div class="col-md-2">
+								<input style="width: 75px" class="money boni calc marcaAlterado" type="text" name="produtos[].boni" value="">
+							</div>
+							<div class="col-md-2">
+								<strong>PMZ+INV:</strong>
+							</div>
+							<div class="col-md-2">
+								<input style="width: 75px" disabled="disabled" class="pmzInv" readonly="readonly" type="text" name="produtos[].pmzInv" value="">
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-2">
+								<strong>Margem PDV:</strong>
+							</div>
+							<div class="col-md-2">
+								<input style="width: 75px" disabled class="margemPdv marcaAlterado" type="text" name="produtos[].margemPdv" value="">
+							</div>
+							<div class="col-md-2">
+								<strong>Margem Final:</strong>
+							</div>
+							<div class="col-md-2">
+								<input style="width: 75px" disabled="disabled" class="margemFinal" readonly="readonly" type="text" name="produtos[].margemFinal" value="">
+							</div>
+							<div class="col-md-2">
+								<strong>Lucro PDV:</strong>
+							</div>
+							<div class="col-md-2">
+								<input style="width: 75px" disabled="disabled" class="lucroPdv" readonly="readonly" type="text" name="produtos[].lucroPdv" value="">
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-2">
+								<strong>Lucro Final:</strong>
+							</div>
+							<div class="col-md-2">
+								<input style="width: 75px" disabled="disabled" readonly="readonly" class="lucroFinal" type="text" name="produtos[].lucroFinal" value="">
+							</div>
+							<div class="col-md-2">
+								<strong>Menor preço concorrente:</strong>
+							</div>
+							<div class="col-md-2">
+								<input style="width: 75px" disabled="disabled" type="text" name="produtos[].concorrente1minimo" value="">
+							</div>
+							<div class="col-md-2">
+								<strong>Preço médio concorrente:</strong>
+							</div>
+							<div class="col-md-2">
+								<input style="width: 75px" disabled="disabled" type="text" name="produtos[].concorrente2minimo" value="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<button type="button" class="btn correcoes">Solicitar correções deste SKU</button>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

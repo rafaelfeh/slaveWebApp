@@ -1,0 +1,71 @@
+/*Box*/
+.box-img {
+	display:block;
+	background:#f6f6f6;
+	border:2px solid #CCC;
+	font-size:16px;
+	color:#666;
+	text-align:center;
+	text-decoration:none;
+	font-weight:bold;
+	z-index:-10;
+	overflow: hidden;
+}
+/*Box*/
+.box-img:hover {
+	/*border:2px solid #FF2222;*/
+}
+.bg-grey {
+	background:#e5e5e5;
+	padding:10px;
+}
+
+
+.square {
+    float:left;
+    position: relative;
+    width: 100%;
+    padding-bottom : 100%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    overflow:hidden;
+}
+
+.sqcontent {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    
+}
+
+/*  For responsive images */
+
+.sqcontent img{
+    width:auto;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
+}
+
+
+.under
+{
+position:absolute;
+left:0px;
+top:0px;
+z-index:0;
+}
+.middle
+{
+position:absolute;
+left:10%;
+top:10%;
+z-index:1;
+}
+.over
+{
+position:absolute;
+left:65px;
+top:60px;
+z-index:1;
+}

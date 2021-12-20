@@ -1,0 +1,65 @@
+<p style="font-size: 14px;" class="tituloSubproduto"></p>
+<input type="hidden" class="detalheProdutoID" name="produtos[].detalhes[].produto.produtoID" value="">
+
+<div class="rankingSubproduto"></div>
+
+<div class="row">
+	<div class="col-md-2">
+		<strong>PMZ:</strong>
+		<input class="form-control money pmz calc marcaAlterado" type="text" name="produtos[].detalhes[].pmz" value="">
+	</div>
+	<div class="col-md-2">
+		<strong>BONI:</strong>
+		<input class="form-control money boni calc marcaAlterado" type="text" name="produtos[].detalhes[].boni" value="">
+	</div>
+	<div class="col-md-2">
+		<strong>PMZ+INV:</strong>
+		<input disabled="disabled" class="form-control pmzInv" readonly="readonly" type="text" name="produtos[].detalhes[].pmzInv" value="">
+	</div>
+
+	<div class="col-md-2">
+		<strong>Margem PDV:</strong>
+		<input disabled class="form-control margemPdv" type="text" name="produtos[].detalhes[].margemPdv" value="">
+	</div>
+	<div class="col-md-2">
+		<strong>Margem Final:</strong>
+		<input disabled="disabled" class="form-control margemFinal" readonly="readonly" type="text" name="produtos[].detalhes[].margemFinal" value="">
+	</div>
+	<div class="col-md-2">
+		<strong>Lucro PDV:</strong>
+		<input disabled="disabled" class="form-control lucroPdv" readonly="readonly" type="text" name="produtos[].detalhes[].lucroPdv" value="">
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-2">
+		<strong>Lucro Final:</strong>
+		<input disabled="disabled" readonly="readonly" class="form-control lucroFinal" type="text" name="produtos[].detalhes[].lucroFinal" value="">
+	</div>
+	<div class="col-md-2">
+		<strong>Menor pre&ccedil;o concorrente:</strong>
+		<input type="text" class="marcaAlterada money form-control concorrenteMinimo" name="produtos[].detalhes[].concorrente1minimo">
+	</div>
+	<div class="col-md-2">
+		<strong>Pre&ccedil;o m&eacute;dio concorrente:</strong>
+		<input type="text" class="marcaAlterada money form-control concorrenteMedio" name="produtos[].detalhes[].concorrente2minimo">
+	</div>
+
+		<div class="col-md-2">
+			<strong>Estoque CD:</strong>
+			<input readonly="readonly" class="form-control estoqueCd" type="text" name="produtos[].detalhes[].estoqueCd"  value="0,00" >
+		</div>
+		<div class="col-md-2">
+			<strong>Estoque Médio (lojas):</strong>
+			<input readonly="readonly" class="form-control estoqueMedio" type="text" name="produtos[].detalhes[].estoqueMedio"  value="0,00" >
+		</div>
+		<div class="col-md-2">
+			<strong>Estoque Total (Lojas + CD):</strong>
+			<input readonly="readonly" class="form-control estoqueTotal" type="text" name="produtos[].detalhes[].estoqueTotal"  value="0,00" >
+		</div>
+	</div>
+	
+		<br>
+	<a type="text" class="btn btn-success replicar"><i class="fas fa-exchange-alt"></i> Replicar PMZ & BONI</a> 
+	<button type="button" class="btn btn-success correcoes"><i class="fab fa-stack-exchange"></i> Atualizar SKU</button>
+	
+<br/>

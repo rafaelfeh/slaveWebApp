@@ -1,0 +1,166 @@
+/* reset some stuff */
+.grid {
+	background-color: #999999;
+	border-spacing: 0;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #999999;
+	font-size: 11px;
+}
+
+.grid a:link {
+	font-family: 'Comfortaa';
+	color: #000000;
+	text-decoration: none;
+}
+
+.grid a:visited {
+	font-family: 'Comfortaa';
+	color: #000000;
+	text-decoration: none;
+}
+
+.grid a:hover {
+	font-family: 'Comfortaa';
+	color: #aa0000;
+	text-decoration: none;
+}
+
+.grid thead tr {
+	font-family: 'Comfortaa';
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #FFFFFF;
+	background: #14393e;
+	border: 1px solid #14393e;
+}
+
+.grid thead tr a:link{
+	color: #BEBE10;
+}
+
+.grid tr th {
+	font-family: 'Comfortaa';
+	font-weight: bold;
+	color: #245A38;
+	background: #BEBE10;
+	border: 1px solid #999999;
+}
+
+.grid thead td {
+	border: 1px solid #999999;
+	padding: 3px;
+}
+
+.grid td {
+	border: 1px solid #999999;
+	padding: 3px;
+}
+
+.grid tbody tr {
+	font-family: 'Comfortaa';
+	font-weight: normal;
+	color: #000000;
+	background: #ffffff;
+	text-align: left;
+}
+
+.grid tbody td {
+	padding: 2px;
+}
+
+.grid tbody tr:hover {
+	font-family: 'Comfortaa';
+	font-weight: normal;
+	color: #000000;
+	background: #e9e9e9;
+}
+
+.grid tfoot tr {
+	font-family: 'Comfortaa';
+	font-weight: bold;
+	color: #000000;
+	background: #ffffff;
+}
+
+.subgrid {
+	background-color: #f58220;
+}
+
+.subgrid thead tr {
+	font-family: 'Comfortaa';
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #f58220;
+}
+
+.subgrid tr th {
+	font-family: 'Comfortaa';
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #f58220;
+}
+
+.subgrid thead td {
+	border: none;
+}
+
+.subgrid thead tr:hover {
+	font-family: 'Comfortaa';
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #f58220;
+}
+
+.subgrid tbody tr {
+	font-family: 'Comfortaa';
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	background: #ffffff;
+}
+
+.subgrid tbody tr:hover {
+	font-family: 'Comfortaa';
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	background: #ffffff;
+}
+
+.column {
+	width: 250px;
+	float: left;
+	padding-bottom: 5px;
+}
+
+.portlet {
+	margin: 0 1em 1em 0;
+}
+
+.portlet-header {
+	margin: 0.3em;
+	padding-bottom: 4px;
+	padding-left: 0.2em;
+}
+
+.portlet-header .ui-icon {
+	float: right;
+}
+
+.portlet-content {
+	padding: 0.4em;
+}
+
+.ui-sortable-placeholder {
+	border: 1px dotted black;
+	visibility: visible !important;
+	height: 50px !important;
+}
+
+.ui-sortable-placeholder * {
+	visibility: hidden;
+}

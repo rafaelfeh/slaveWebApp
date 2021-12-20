@@ -1,0 +1,59 @@
+html,body {
+	width:100%;
+	height:100%;
+}
+body {
+	background-image:url(../imagens/bg-login.jpg);
+    background-color: #14393f;
+    background-repeat: no-repeat;	
+	margin:0px;
+	padding:0px;
+	font-family: 'pill_gothic_300mgregular';
+	font-size:14px;
+	color:#000000;
+}
+header {
+	padding:20px;
+}
+#boxLogin {
+	background-color:#FFF;
+	float:right;
+	width:400px;
+	height:100%;
+}
+#logo01 {
+	background-image:url(../imagens/logo_jui.jpg);
+	background-repeat:no-repeat;
+	width:139px;
+	height:82px;
+	text-indent:-900000px;
+}
+#conteudo {
+	padding:20px;
+}
+.form01 {
+	font-family: 'pill_gothic_300mgregular';
+	color:#666;
+	font-size:14px;
+	padding:5px;
+}
+.btn {
+	background-color:#ef781c;
+	padding:7px 30px;
+	border:none;
+	border-bottom:3px solid #fed16b;
+	color:#FFF;
+	cursor:pointer;
+	transition: background .25s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+}
+.btn:hover {
+	background-color:#fed16b;
+	border-bottom:3px solid #ffeabf;
+}
+footer {
+	padding:20px;
+	font-size:12px;
+	color:#666;
+}

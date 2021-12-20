@@ -1,0 +1,58 @@
+<p style="font-size: 20px;" class="tituloSubproduto"></p>
+<input type="hidden" class="detalheProdutoID" name="produtos[].detalhes[].produto.produtoID" value="">
+<div class="row">
+	<div class="col-md-2">
+		<strong>PMZ:</strong>
+	</div>
+	<div class="col-md-2">
+		<input style="width: 75px" class="money pmz calc" type="text" name="produtos[].detalhes[].pmz" value="">
+	</div>
+	<div class="col-md-2">
+		<strong>BONI:</strong>
+	</div>
+	<div class="col-md-2">
+		<input style="width: 75px" class="money boni calc" type="text" name="produtos[].detalhes[].boni" value="">
+	</div>
+	<div class="col-md-2">
+		<strong>PMZ+INV:</strong>
+	</div>
+	<div class="col-md-2">
+		<input style="width: 75px" disabled="disabled" class="pmzInv" readonly="readonly" type="text" name="produtos[].detalhes[].pmzInv" value="">
+	</div>
+</div>
+<br />
+<div class="row">
+	<div class="col-md-2">
+		<strong>Margem PDV:</strong>
+	</div>
+	<div class="col-md-2">
+		<input style="width: 75px" disabled class="margemPdv" type="text" name="produtos[].detalhes[].margemPdv" value="">
+	</div>
+	<div class="col-md-2">
+		<strong>Margem Final:</strong>
+	</div>
+	<div class="col-md-2">
+		<input style="width: 75px" disabled="disabled" class="margemFinal" readonly="readonly" type="text" name="produtos[].detalhes[].margemFinal" value="">
+	</div>
+	<div class="col-md-2">
+		<strong>Lucro PDV:</strong>
+	</div>
+	<div class="col-md-2">
+		<input style="width: 75px" disabled="disabled" class="lucroPdv" readonly="readonly" type="text" name="produtos[].detalhes[].lucroPdv" value="">
+	</div>
+</div>
+<br />
+<div class="row">
+	<div class="col-md-2">
+		<strong>Lucro Final:</strong>
+	</div>
+	<div class="col-md-2">
+		<input style="width: 75px" disabled="disabled" readonly="readonly" class="lucroFinal" type="text" name="produtos[].detalhes[].lucroFinal" value="">
+	</div>
+</div>
+<br/>
+<div class="row">
+	<div class="col-md-6">
+		<button type="button" class="btn replicar">Replicar PMZ & BONI</button> <button type="button" class="btn correcoes">Solicitar corre&ccedil;&otilde;es deste SKU</button>
+	</div>
+</div>

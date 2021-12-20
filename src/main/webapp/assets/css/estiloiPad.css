@@ -1,0 +1,100 @@
+body {
+	font-family:arial;
+	font-size:16px;
+	margin:0px;
+	padding:0px;
+}
+h1 {
+	color:#003878;
+	font-weight:normal;
+}
+#bgLogin {
+	background-image:url(../imagens/bg-login.jpg);
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-color:#c8e8f6;
+}
+header {
+	width:960px;
+	margin:0px auto;
+	padding:20px 0px;
+}
+.logoRACI {
+	background-image:url(../imagens/the-amazing-raci-2.png);
+	background-repeat:no-repeat;
+	width:160px;
+	height:36px;
+	text-indent:-90000px;
+	float:left;
+}
+.logoCovidien {
+	background-image:url(../imagens/covidien.png);
+	background-repeat:no-repeat;
+	width:183px;
+	height:32px;
+	text-indent:-90000px;
+	float:right
+}
+.clear {
+	clear:both;
+}
+#container {
+	width:800px;
+	margin:250px auto;
+	background-color:#FFFFFF;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 56, 120, 0.75);
+	-moz-box-shadow:0px 0px 30px 0px rgba(0, 56, 120, 0.75);
+	box-shadow:0px 0px 30px 0px rgba(0, 56, 120, 0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#base {
+	width:400px;
+	margin:0px auto;
+	padding:25px;
+}
+label {
+	display:block;
+	padding-top:10px;
+}
+.form01 {
+	padding:7px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #CCCCCC;
+}
+.btn01 {
+	background-color:#f78f1e;
+	color:#FFFFFF;
+	font-family:arial;
+	font-size:14px;
+	padding:7px 20px;
+	border:none;
+	cursor:pointer;
+}
+.btn01:hover {
+	background-color:#ffa200;
+}
+#boxMsg {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+	text-align:center;
+}
+.msgRed {
+	background-color:#FFF;
+	border:1px solid #05a1de;
+	padding:5px;
+}
+.msgYellow {
+	background-color:#FFF;
+	border:1px solid #05a1de;
+	padding:5px;
+}
